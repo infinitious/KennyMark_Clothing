@@ -1,0 +1,266 @@
+
+/*end of media queary*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+	background-color: lightgrey;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.foot{
+	padding: 20px;
+	margin-top: 20px;
+	margin-right: 0px;
+	color: white;
+	/*background-color: #e8491d;*/
+	background: gray;
+	text-align: center;
+}
+.foot img{
+	width: 20px;
+	height: 20px;
+}
+#hub{
+	color: purple;
+}
+
+
+
+
+.my_header{
+ 
+   background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/bgimg.jpg);
+	background-size: cover;
+	background-position-x: left;
+    height:620px;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+.my_header img{
+    float: left;
+    height: 30px;
+    color: white;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.my_header h3{
+    float: left;
+   margin-left:-90px;
+   margin-top: 50px;;
+}
+.my_nav{
+    float: right;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+.my_nav ul li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+     border-radius: 20px;
+     border-color: green;
+}
+.my_nav ul li a{
+    text-decoration: none;
+    color: white;
+     background-color:transparent;
+	padding:10px;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: green;
+}
+.active a{
+	background-color:white;
+	color:green;
+	border-radius: 10px;
+				
+}
+.my_nav ul li a:hover, .my_nav .active{
+
+    background-color:green;
+	color:white;
+    border-radius: 10px;
+    border-color: white;
+}
+.container{
+    margin-top: -350px;
+    margin-left: 5px;
+    margin-bottom: 230px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.btn button{
+    color: white;
+     background-color:transparent;
+	padding:10px;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: green;
+    font-size: 15px;
+}
+.btn #vogue{
+    background-color:white;
+    color: green;
+}
+.btn #latest:hover, .btn #vogue:hover{
+    background-color:green;
+	color:white;
+    border-radius: 10px;
+    border-color: white;
+
+}
+#message{
+    text-align: center;
+    /* background-color: #35424a; */
+    color:black;
+    margin-top: 0px;
+   
+}
+#message h1{
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.main-container{
+	position: relative;
+	width: 250px;
+	height: 320px;
+	margin: 10px;
+	padding: 10px;
+
+}
+.the-card{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease;
+	padding: 5px;
+
+	
+}
+.the-card img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+}
+.the-front{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	background-color: red;
+	color: white;
+}
+.the-back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: green;
+	backface-visibility: hidden;
+	color: white;
+	transform: rotateY(180deg);
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+.the-back img{
+	width: 30%;
+	height: 25%;
+	margin-top: 70px;
+}
+.the-card:hover {
+
+transform: rotateY(180deg);
+
+}
+
+
+/*Pics arrangement*/
+
+.all{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.m h3{
+	text-align: center;
+}
+.m h2{
+	text-align: center;
+	margin-top: 15px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.m h5{
+	text-align: center;
+	color: red;
+}
+
+
+
+
+@media (min-width: 360px ) and (max-width:768px)
+{
+	.the-card:hover {
+
+transform: rotateY(180deg);
+}	
+
+
+.myheader{
+	margin: 10px;
+	padding: 20px;
+	position: relative;
+	
+	text-align: center;
+}
+.my_header #my_logo{
+	margin-left: 150px;
+ 
+}
+ #my_header img{
+	
+}
+.my_header h3{
+    float: left;
+   margin-left:-100px;
+   margin-top: 50px;
+   /*background-color: blue;*/
+   margin-top: 55px;
+}
+
+.container{
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
