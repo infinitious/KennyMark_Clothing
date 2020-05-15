@@ -42,6 +42,89 @@ body{
 
 }
 
+
+
+/*  */
+/* CONTACT US */
+#contact_us{
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/kenny_working.png);
+	background-size: cover;
+	background-position: center;
+    height:100vh;
+	/*center center fixed*/
+	 -webkit-background-size: cover;
+	  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	text-align: center;
+	color: white;
+	padding: 0px;
+}
+#contact_us{
+	margin-top: 30px;
+	width: 82%;
+	text-align: center;
+	margin-left: 10%;
+	display: flex;
+	padding: 3%;
+	flex-direction: column;
+}
+#contact_us h2{
+	text-align: center;
+}
+.homeaddress{
+	flex: 1;
+}
+.officeaddress{
+	flex: 1;
+}
+.socialmedia{
+	flex: 1;
+}
+.all{
+	text-align: center;
+	margin: 5px;
+}
+.story, .our-mission{
+	flex: 1;
+	margin: 5px;
+}
+.pics-links img{
+	width: 100px;
+	padding: 5px;
+}
+.all .pics-links{
+	display: flex;
+	width: 90%;
+	padding: 15px;
+	margin: 5px;
+
+	justify-content: space-around;
+	flex-direction: row;
+}
+.kin{
+	font-size: 20px;
+}
+.facebook{
+	width: 30%;
+	margin-top: 15px;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+.instagram{
+	width: 30%;
+	margin-left: 5px;
+	margin-right: 15px;
+	margin-top: 0px;
+}
+.whatsapp{
+	width: 30%;
+	margin: 15px;
+}
+
+
+
+/* HEADER */
 .my_header img{
     float: left;
     height: 30px;
@@ -54,47 +137,66 @@ body{
    margin-left:-90px;
    margin-top: 50px;;
 }
-.my_nav{
-    float: right;
-    margin-right: 40px;
-    margin-top: 30px;
+
+/* NAVIGATION */
+.my_nav ul{
+	margin-right: 80px;
+	/* margin-top: 15px; */
+	/* margin-left: -50px; */
+
 }
 .my_nav ul li{
-    display: inline-block;
-    padding: 10px;
-    font-size: 16px;
-     border-radius: 20px;
-     border-color: green;
+	 float: right;
+	 position: relative;
+	 text-decoration: none;
+	 list-style: none;
+	 margin-top: 25px;
 }
 .my_nav ul li a{
-    text-decoration: none;
-    color: white;
-     background-color:transparent;
-	padding:10px;
-    border-style: solid;
-    border-radius: 7px;
-    border-color: green;
-}
+
+
+		text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+        display: block;
+
+
+} 
 .active a{
 	background-color:white;
 	color:green;
 	border-radius: 10px;
 				
 }
-.my_nav ul li a:hover, .my_nav .active{
+.my_nav ul li a:hover, .my_nav .active, .my_nav ul li ul a:hover{
 
     background-color:green;
 	color:white;
     border-radius: 10px;
     border-color: white;
 }
+
+.my_nav ul ul{
+        position: absolute;
+        padding: 0px;
+        display: none;
+        top: 100%;
+		left: 0px;
+		/* background-color: gray ; */
+    }
+
+ .my_nav ul li:hover > ul{
+        display: block;
+    }
+
 .container{
     margin-top: -350px;
     margin-left: 5px;
     margin-bottom: 230px;
     color: white;
     text-transform: uppercase;
-    text-align: center;
+	text-align: center;
+	/* background-color: red; */
 }
 .btn button{
     color: white;
@@ -126,17 +228,6 @@ body{
 #message h1{
 	color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .main-container{
 	position: relative;
@@ -225,8 +316,15 @@ transform: rotateY(180deg);
 
 transform: rotateY(180deg);
 }	
-
-
+#contact_us{
+	/* margin-top: 30px;
+	width: 82%;
+	text-align: center;
+	margin-left: 10%;
+	display: flex; */
+	flex-direction:column;
+	padding: 10px;
+}
 .myheader{
 	margin: 10px;
 	padding: 20px;
@@ -238,9 +336,7 @@ transform: rotateY(180deg);
 	margin-left: 150px;
  
 }
- #my_header img{
-	
-}
+ 
 .my_header h3{
     float: left;
    margin-left:-100px;
@@ -249,18 +345,151 @@ transform: rotateY(180deg);
    margin-top: 55px;
 }
 
-.container{
+}
+@media  (min-width: 1024px) and (max-width: 1500px){
+	.kin{
+		font-size: 50px;
+	}	
+}
+
+@media  (min-width: 730px) and (max-width: 1023px){
+.my_nav {
+	float: none;
+}
+.pics-links img{
+	width: 100px;
+	padding: 5px;
+}
+.all .pics-links{
+	display: flex;
+	width: 90%;
+	padding: 15px;
+	margin: 5px;
+
+	justify-content: space-around;
+	flex-direction: row;
+}
+.pics-links h2{
+	font-size: 18px;
+}
+.kin{
+	font-size: 40px;
+}
+}
+
+
+
+
+
+
+@media  (min-width: 400px) and (max-width: 729px){
+
+#showcase{
+	 -webkit-background-size: cover;
+	  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	text-align: center;
+	color: white;
+	padding: 0px;
+}
+
+.my_nav{
+	float: right;
+	margin-left: -40px;
+	margin-right: 20px;
+	margin-top: -20px;
+}
+
+.pics-links img{
+	width: 50px;
+	padding: 5px;
+}
+.all .pics-links{
+	display: flex;
+	width: 90%;
+	padding: 10px;
+	margin: 5px;
+	justify-content: space-evenly;
+	flex-direction: row;
+}
+.all .pics-links h2{
+	font-size: 15px;
+	text-align: center;
+}
+.facebook{
+	width: 30%;
+	margin-top: 15px;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+.instagram{
+	width: 30%;
+	margin-left: 5px;
+	margin-right: 15px;
+	margin-top: 80px;
+}
+.whatsapp{
+	width: 30%;
+	margin: 15px;
+}
 
 }
 
 
+
+@media  (min-width: 300px) and (max-width: 399px){
+
+.my_nav{
+	display: block;
+}
+
+.my_nav ul li:hover > ul > li{
+	padding: 0px;
+	margin: 0px;
+}
+
+.all{
+	text-align: center;
+	margin: 5px;
+}
+.story, .our-mission{
+	flex: 1;
+	margin: 5px;
+}
+.pics-links img{
+	width: 50px;
+	padding: 5px;
+}
+.all .pics-links{
+	display: flex;
+	width: 90%;
+	padding: 10px;
+	margin: 5px;
+	justify-content: space-evenly;
+	flex-direction: row;
+}
+.all .pics-links h2{
+	font-size: 15px;
+	text-align: center;
+}
+.facebook{
+	width: 30%;
+	margin-top: 15px;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+.instagram{
+	width: 30%;
+	margin-left: 5px;
+	margin-right: 15px;
+	margin-top: 80px;
+}
+.whatsapp{
+	width: 30%;
+	margin: 15px;
 }
 
 
 
-
-
-
-
-
-
+}
